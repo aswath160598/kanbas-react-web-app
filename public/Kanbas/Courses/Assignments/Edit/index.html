@@ -1,0 +1,89 @@
+<html>
+
+<head>
+
+<body>
+    <select id="choose-one-grader">
+        <option selected value="spped_grader_value">SpeedGrader</option>
+        <option value="slow_grader_value">SlowGrader</option>
+        <option value="average_grader_value">AverageGrader</option>
+    </select>
+    <hr>
+
+    <h2>Assignment Name</h2>
+    <form id="edit_assignment">
+        <input id="assignment_name_text_ID" value="A1 - Intro/HTML" />
+        <br/><br/>
+        <textarea cols="30" rows="3">This is the assignment description</textarea><br/><br/>
+
+        Points<br/>
+        <input id="text_points_ID" value="100" />
+        <br/><br/>
+
+        <label for="assignment_group">Assignment Group</label>
+        <br/>
+
+        <select id="assignment_group">
+            <option value="assignments_value">ASSIGNMENTS</option>
+        </select>
+
+        <br/><br/>
+
+        <label for="display_grade_ID">Display Grade as</label>
+        <br/>
+        <select id="display_grade_ID">
+            <option value="percentage_value">Percentage</option>
+        </select>
+        <br/><br/>
+
+        <label for="submission_ID">Submission Type</label>
+        <br/>
+        <select id="submission_ID">
+            <option value="online_value">Online</option>
+        </select>
+        <br/><br/>
+
+        <label>Online Entry Options</label>
+        <br/>
+        <input type="checkbox" value="TEXT_ENTRY" name="name-online-entry" id="online-entry-options-ID" />
+        <label for="online-entry-options-ID">Text Entry</label> <br/>
+        <input type="checkbox" value="WEBSITE_URL" name="name-online-entry" id="online-entry-options-ID" />
+        <label for="online-entry-options-ID">Website URL</label> <br/>
+        <input type="checkbox" value="MEDIA_RECORDINGS" name="name-online-entry" id="online-entry-options-ID" />
+        <label for="online-entry-options-ID">Media Recordings</label> <br/>
+        <input type="checkbox" value="STUDENT_ANNOTATION" name="name-online-entry" id="online-entry-options-ID" />
+        <label for="online-entry-options-ID">Student Annotation</label> <br/>
+        <input type="checkbox" value="FILE_UPLOADS" name="name-online-entry" id="online-entry-options-ID" />
+        <label for="online-entry-options-ID">File Uploads</label> <br/><br/>
+
+        Assign<br>
+        <label for="display_grade_as">Assign to</label><br/>
+        <input id="display_grade_as" value="Everyone" />
+        
+        <br/><br/>
+
+        <label for="grade_due_ID">Due</label><br/>
+        <input type="date" id="grade_due_ID" value="2021-01-01" />
+        <br/><br/>
+
+        <label for="grade_available_from_date_ID">Available from</label><br/>
+        <input type="date" id="grade_available_from_date_ID" value="2021-01-01" />
+        <br/><br/>
+
+        <label for="grade_available_until_date_ID">Until</label><br/>
+        <input type="date" id="grade_available_until_date_ID" value="2021-01-01" />
+        <br/><br/>
+
+        <button>
+            <a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a>
+        </button>
+        <button>
+            <a href="/Kanbas/Courses/Assignments/screen.html">Save</a>
+        </button>
+    </form>
+
+
+</body>
+</head>
+
+</html>

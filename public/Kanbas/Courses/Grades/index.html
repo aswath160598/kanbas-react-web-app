@@ -1,0 +1,202 @@
+<html>
+
+<head>
+
+<body>
+    <select id="select_gradebook">
+        <option selected value="GRADEBOOK">
+            Gradebook
+        </option>
+
+    </select>
+
+    <button>Import</button>
+
+    <select id="choose_export">
+        <option select value="EXPORT">
+            Export
+        </option>
+    </select>
+    
+    <button>Configure</button>
+
+    <form id="grade-form">
+        <h3 for="studentnamesID">
+            Student Names
+        </h3>
+        <input id="studentnamesID" placeholder="Search Students" />
+        <br/>
+        <h3 for="assignmentnamesID">
+            Assignment Names
+        </h3>
+        <input id="assignmentnamesID" placeholder="Search Assignments" />
+        <br/>
+    </form>
+
+    <button type="submit" form="grade-form" value="apply_filter">Apply Filters</button> <br /><br />
+
+    <table border="1" width="100%" align="center">
+        <thead>
+            <tr>
+                <th align="center">Student Name</th>
+                <th align="center">A1 SETUP <br>Out of 100</th>
+                <th align="center">A2 HTML <br>Out of 100</th>
+                <th align="center">A3 CSS <br>Out of 100</th>
+                <th align="center">A4 BOOSTRAP <br>Out of 100</th>
+                <th align="center">A5 JAVASCRIPT <br>Out of 100</th>
+                <th align="center">A6 REACT <br>Out of 100</th>
+                <th align="center">A7 REDUX <br>Out of 100</th>
+                <th align="center">A8 NODE <br>Out of 100</th>
+                <th align="center">A9 MONGO <br>Out of 100</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice Wonderland</td>
+                <td align="center">98</td>
+                <td align="center">89</td>
+                <td align="center">87</td>
+                <td align="center">90</td>
+                <td align="center">89</td>
+                <td align="center">94</td>
+                <td align="center">88</td>
+                <td align="center">87</td>
+                <td align="center">100</td>
+            </tr>
+            <tr>
+                <td>Princes Leia</td>
+                <td align="center">98</td>
+                <td align="center">80</td>
+                <td align="center">87</td>
+                <td align="center">86</td>
+                <td align="center">100</td>
+                <td align="center">94</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="85"></td>
+                <td align="center">84</td>
+                <td align="center">92</td>
+            </tr>
+            <tr>
+                <td>Luke Skywalker</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="99"></td>
+                <td align="center">88</td>
+                <td align="center">97</td>
+                <td align="center">82</td>
+                <td align="center">96</td>
+                <td align="center">93</td>
+                <td align="center">95</td>
+                <td align="center">100</td>
+                <td align="center">93</td>
+            </tr>
+            <tr>
+                <td>Han Solo</td>
+                <td align="center">83</td>
+                <td align="center">99</td>
+                <td align="center">94</td>
+                <td align="center">98</td>
+                <td align="center">86</td>
+                <td align="center">85</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="86"></td>
+                <td align="center">80</td>
+                <td align="center">84</td>
+            </tr>
+            <tr>
+                <td>Lando Calresian</td>
+                <td align="center">83</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="92"></td>
+                <td align="center">80</td>
+                <td align="center">80</td>
+                <td align="center">92</td>
+                <td align="center">92</td>
+                <td align="center">94</td>
+                <td align="center">87</td>
+                <td align="center">95</td>
+            </tr>
+            <tr>
+                <td>Boba Fet</td>
+                <td align="center">85</td>
+                <td align="center">89</td>
+                <td align="center">94</td>
+                <td align="center">83</td>
+                <td align="center">83</td>
+                <td align="center">84</td>
+                <td align="center">91</td>
+                <td align="center">87</td>
+                <td align="center">96</td>
+            </tr>
+            <tr>
+                <td>Darth Vader</td>
+                <td align="center">81</td>
+                <td align="center">81</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="96"></td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">88</td>
+                <td align="center">82</td>
+                <td align="center">80</td>
+                <td align="center">82</td>
+            </tr>
+            <tr>
+                <td>Obi-Wan Kenobi</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="85"></td>
+                <td align="center">99</td>
+                <td align="center">87</td>
+                <td align="center">82</td>
+                <td align="center">88</td>
+                <td align="center">83</td>
+                <td align="center">88</td>
+                <td align="center">92</td>
+                <td align="center">80</td>
+            </tr>
+            <tr>
+                <td>R2-D2</td>
+                <td align="center">81</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="92"></td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="82"></td>
+                <td align="center">86</td>
+                <td align="center">83</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="84"></td>
+                <td align="center">98</td>
+                <td align="center">85</td>
+                <td align="center">96</td>
+            </tr>
+            <tr>
+                <td>C-3PO</td>
+                <td align="center">94</td>
+                <td align="center">98</td>
+                <td align="center">83</td>
+                <td align="center">83</td>
+                <td align="center">100</td>
+                <td align="center">96</td>
+                <td align="center">96</td>
+                <td align="center">85</td>
+                <td align="center">87</td>
+            </tr>
+            <tr>
+                <td>Yoda</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">99</td>
+                <td align="center">89</td>
+                <td align="center">96</td>
+                <td align="center">95</td>
+                <td align="center">96</td>
+                <td align="center">92</td>
+                <td align="center">85</td>
+            </tr>
+            <tr>
+                <td>Yoda</td>
+                <td align="center">82</td>
+                <td align="center">88</td>
+                <td align="center">95</td>
+                <td align="center">100</td>
+                <td align="center"><input type="number" min="0" max="100" placeholder="93"></td>
+                <td align="center">98</td>
+                <td align="center">85</td>
+                <td align="center">87</td>
+                <td align="center">99</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</head>
