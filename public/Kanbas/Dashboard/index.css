@@ -1,0 +1,40 @@
+.title_hd{
+    padding-top: 34px;
+}
+
+.design-style .col{
+    width : 265px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+}
+
+.card-title{
+    color: rgb(0, 128, 255);
+    font-size: 16px;
+}
+
+.wd-acc-nav a{
+    text-decoration: none;
+    color:rgb(207, 28, 28);
+   }
+
+.wd-acc-nav i{
+       color:rgb(207, 28, 28);
+   }
+
+.top_title_course{
+    padding-top: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.card-title{
+    font-size: 16px;
+}
+.style_board a{
+    text-decoration: none;
+    font-size: 13px;
+}
+.card-text{
+    color: rgb(104, 103, 103);
+}
+

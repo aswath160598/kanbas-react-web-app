@@ -1,0 +1,25 @@
+
+.title_hd {
+    display: flex;
+    align-items: center;
+    padding-top : 20px;
+}
+
+.identity-mark {
+    margin-right: 10px; 
+    color : rgb(207, 28, 28);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+.user-ref{
+    font-size: 25px;
+}
+
+.col-md-2.no-padding, .col-md-3.no-padding{
+    padding: 0px;
+}
+

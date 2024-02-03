@@ -1,0 +1,40 @@
+
+.ind_widget i{
+    color:rgb(192, 9, 9);
+}
+
+.external-box{
+    border: 2px solid #ccc; 
+    padding: 20px; 
+    width: 93%; 
+    margin: 0px auto;
+}
+
+ul.ind_widget {
+    list-style: none;
+}
+
+.ind_widget a{
+ text-decoration: none;
+ color:rgb(192, 9, 9);
+}
+.ind_widget i{
+    color:rgb(192, 9, 9)
+}
+
+ul.ind_widget {
+    list-style: none;
+}
+
+.ind_widget a{
+    text-decoration: none;
+    color:rgb(192, 9, 9);
+}
+
+.col-sm{
+    margin-left:0px;
+    padding-left: 0px;
+}
+.menu-button i{
+    color:white;
+}

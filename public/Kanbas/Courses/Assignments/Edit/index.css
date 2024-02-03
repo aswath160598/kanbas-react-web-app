@@ -1,0 +1,203 @@
+.main-assignment-content{
+    margin-right: 70px;
+}
+
+
+.breadcrumb-item a{
+    text-decoration: none;
+    color:rgb(207, 28, 28);
+}
+
+
+.header_margin{
+    margin-bottom: 12px;
+    margin-left: 810px;
+}
+
+.wd-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 125px;
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .wd-navigation li {
+    width: 200px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .wd-navigation li.wd-active {
+    border-left: 2px solid black;
+  }
+  .wd-navigation li.wd-active a {
+    color: black;
+  }
+  .wd-navigation a {
+    color: rgb(207, 28, 28);
+    text-decoration: none;
+  }  
+
+.menu-button{
+    margin-left: 10px;
+    
+}
+
+.custom-col {
+    padding: -50px; 
+  }
+
+  .with-eye {
+    display: flex;
+    align-items: center;
+}
+
+.with-eye i {
+    margin-left: 0.5rem;
+}
+
+.grey-text {
+    color: grey;
+    width: 700px;
+}
+
+.list-group-item{
+    border-left: 40px solid #0daf7e;
+    padding-left: 10px;
+}
+
+  
+.top-buttons{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.list-group-item a{
+    color: rgba(31, 30, 30, 0.778) !important;
+    text-decoration : none;
+    font-weight: bold;
+}
+
+.list-group-item p{
+    font-size: 12px;
+}
+
+.wd-button{
+    margin-top:50px;
+}
+.main_content{
+    margin-top: 150px;
+}
+.form-select.publish-dropdown{
+    width: 150px;
+}
+
+.main_content-2,.main_content-1{
+    margin-top:30px;
+    min-width: 100px;
+    /* width: 840px */
+}
+.course-status{
+    margin-top:50px;
+    
+}
+.title_hd-button{
+    margin-bottom: 10px;
+    margin-left: 800px;
+}
+.course-status a{
+    color:red;
+    text-decoration:none;
+}
+.left-indent{
+    margin-left: 20px;
+}
+.green-border-left {
+    border-left: 40px solid #0daf7e;
+    padding-left: 10px;
+}
+.navbar {
+    background-color: #000; 
+    color: #f1e9e9; 
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.navbar p {
+    margin: 0; 
+    font-size: 15px; 
+    margin-left: 50px;
+}
+.menu-button{
+    margin-left: 10px;
+    
+}
+.menu-button a{
+    color:white;
+}
+.down-arrow-menu{
+    margin-right: 10px;
+}
+.down-arrow-menu a{
+    color: white;
+}
+
+
+.mybox {
+    border-left-color: red;
+    width: auto;
+  }
+
+
+  .red-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the number 1 */
+.red-circle i {
+    color: white;
+    font-size: 20px;
+}
+
+
+.module-section{
+    margin-top: 100px;
+}
+
+.title-button{
+    color: green;
+    background-color: #f1e9e9;
+}
+
+.published-button {
+    background-color: white;
+    color: #0daf7e;
+    border-radius: 0px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .published-button:hover {
+    background-color: #0daf7e;
+    color: white;
+  }
+
+  .edit-assignment-section{
+    margin-top: 100px;
+    margin-right: 30px;
+  }
+
+  .my-div{
+    margin-top:50px ;
+  }
