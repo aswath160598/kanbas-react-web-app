@@ -255,3 +255,12 @@ p#id-selector-2 {
     width: 85px;
 }
   
+.btn.btn-primary.override-bs {
+    border-width: 9px;
+    border-radius: 23px;
+    background-color: #0dfd69;
+    border-color: #590dfd;
+    border-style: dashed;
+    font-size: 1.8em;
+    font-weight: bolder;
+}
