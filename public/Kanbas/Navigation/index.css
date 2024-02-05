@@ -4,11 +4,11 @@
 .navigating_kanbas_sidebar {
     background-color: black;
     list-style: none;
-    font: Helvetica;
     margin-right: 21px;
-    padding: 0px;
     width: 82px;
+    font: Helvetica;
     height: 130vh;
+    padding: 0px;
 }
 
 .navigation_margin_bar{
