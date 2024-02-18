@@ -1,0 +1,228 @@
+.main_content{
+    margin-top: 150px;
+}
+.form-select.publish-dropdown{
+    width: 150px;
+}
+
+
+.header_margin{
+    margin-bottom: 12px;
+    margin-left: 810px;
+}
+
+.wd-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 125px;
+    margin: 0px;
+    margin-left: 0px;
+  }
+
+
+.wd-navigation li {
+    width: 200px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.wd-navigation li.wd-active {
+    border-left: 2px solid black;
+  } 
+
+.menu-button{
+    margin-left: 10px;
+    
+}
+
+.custom-col {
+    padding: -50px; 
+  }
+
+
+.grey-text {
+    color: grey;
+    width: 700px;
+}
+
+.list-group-item{
+    border-left: 40px solid #0daf7e;
+    padding-left: 10px;
+}
+
+  
+.top-buttons{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.list-group-item a{
+    color: rgba(31, 30, 30, 0.778) !important;
+    text-decoration : none;
+    font-weight: bold;
+}
+
+.with-eye {
+    display: flex;
+    align-items: center;
+}
+
+.with-eye i {
+    margin-left: 0.5rem;
+}
+
+.list-group-item p{
+    font-size: 12px;
+}
+
+.wd-button{
+    margin-top:50px;
+}
+
+.main_content-2,.main_content-1{
+    margin-top:30px;
+    min-width: 100px;
+}
+.course-status{
+    margin-top:0px;
+    
+}
+.title_hd-button{
+    margin-bottom: 10px;
+    margin-left: 800px;
+}
+.course-status a{
+    color:rgb(227, 41, 41);
+    text-decoration:none;
+}
+.left-indent{
+    margin-left: 20px;
+}
+.green-border-left {
+    border-left: 40px solid #0daf7e;
+    padding-left: 10px;
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+    color:rgb(207, 28, 28);
+}
+
+.navbar {
+    background-color: #000; 
+    color: #f1e9e9; 
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.navbar p {
+    margin: 0; 
+    font-size: 15px; 
+    margin-left: 50px;
+}
+
+.down-arrow-menu a{
+    color: white;
+}
+
+
+.mybox {
+    border-left-color: rgb(227, 41, 41);
+    width: auto;
+  }
+
+.wd-navigation li.wd-active a {
+    color: black;
+  }
+
+.wd-navigation a {
+    color: rgb(227, 41, 41);
+    text-decoration: none;
+  } 
+
+.red-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(227, 41, 41);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+    max-height: 300px; 
+    overflow-y: auto;
+   
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.red-circle i {
+    color: white;
+    font-size: 20px;
+}
+
+
+.module-section{
+    margin-top: 100px;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: rgb(227, 41, 41);
+}
+
+.table-bordered {
+    border: 1px solid #ddd; 
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd; 
+}
+
+.table thead {
+    background-color: #f2f2f2; 
+}
+
+.individual-identity {
+    color: rgb(227, 41, 41) 
+}
+
+.menu-button{
+    margin-left: 10px;
+    
+}
+.menu-button a{
+    color:white;
+}
+.down-arrow-menu{
+    margin-right: 10px;
+}
+
+.white-row {
+    background-color: white;
+  }
+  
+  .gray-row {
+    background-color: lightgray;
+    /* You can adjust the shade of gray */
+  }
+  
+  
+  .red-text {
+    color: rgb(227, 41, 41) ;
+  }
+
+  table {
+    border: 1px solid;
+  }

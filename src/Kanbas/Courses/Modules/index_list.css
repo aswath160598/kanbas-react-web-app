@@ -1,0 +1,46 @@
+.button-section{
+    margin-top : 0px;
+}
+
+.module-list{
+    margin-top : 20px;
+}
+
+
+.button-section, .module-list {
+  display: block;
+}
+
+.wd-courses {
+  margin: 10px;
+}
+
+.wd-courses nav .breadcrumb-item {
+  --bs-breadcrumb-divider: '>';
+}
+
+.wd-courses nav .breadcrumb-item.active {
+  padding-left: 10px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+}
+
+.wd-courses span.red-color {
+  color:#b52828;
+}
+
+.wd-courses .wd-icon {
+  color: #b52828;
+  font-size: 1.8em;
+  margin-right: 5px;
+}
+
+.top-b123{
+  margin-top: 0px;
+  /* margin-right: 90px; */
+  max-width: 100%;
+}
+
+.text-success-circles{
+  color: #0daf7e
+}

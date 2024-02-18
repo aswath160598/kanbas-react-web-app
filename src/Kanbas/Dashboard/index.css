@@ -1,0 +1,35 @@
+
+.card-section-line p{
+    color : gray;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+    max-height: 300px; 
+    overflow-y: auto;
+   
+}
+
+.card{
+    margin-top : 30px;
+    width:300px;
+    height: 100px;
+}
+
+.white-row {
+    background-color: white;
+  }
+  
+  
+
+.card-body.Link{
+    text-decoration: none;
+}
+
+.gray-row {
+    background-color: lightgray;
+  }
+
+.no-underline {
+    text-decoration: none; 
+  }

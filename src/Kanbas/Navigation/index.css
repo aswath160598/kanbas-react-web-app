@@ -1,0 +1,46 @@
+.university-image{
+    width: 100px;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; 
+}
+
+
+.Account.active .icon {
+    color: rgb(130, 128, 128)
+}
+
+.widget-nav a.active {
+    background-color: #fff;
+    color: rgb(185, 30, 30); 
+    
+}
+
+.widget-nav{
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    height: 137vh;
+    font: Arial;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 0;
+}
+.widget-nav a {
+    background-color: black;
+    color: white;
+    border: none;
+}
+ 
+.wd-button{
+    margin-top:50px;
+}
+
+
+.icon{
+    color: rgb(172, 23, 23);
+    font-size : 0.7em;
+}
+
+.Account .icon {
+    color: white
+}
