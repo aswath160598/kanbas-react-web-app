@@ -134,28 +134,27 @@ function Grades() {
                     </div>
                 </div>
 
-      <div className="table-responsive table table-striped table-sm custom-table">
-        <table className="table" style={{width:"1100px"}}>
+      <div className="table-responsive  ">
+        <table className="table table-striped table-bordered table-hover" style={{width:"1100px"}}>
           <thead>
-          {/* <tr className="gray-row"> */}
             <th>Student Name</th>
             {as.map((assignment) => (<th>{assignment.title}</th>))}
-            {/* <tr/> */}
           </thead>
           <tbody>
             {es.map((enrollment,index) => {
               const user = users.find((user) => user._id === enrollment.user);
               return (
-                <tr key={enrollment.user} className={index % 2 === 0 ? 'white-row' : 'gray-row'}>
+                <tr>
                    <td style={{color:"rgb(227, 41, 41) "}}>{user?.firstName} {user?.lastName}</td>
                    {assignments.filter((assignment) => assignment.course === courseId).map((assignment) => {
                      const grade = grades.find(
                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
                        return (<td key={assignment._id}>{grade?.grade || ""}</td>);})}
-</tr>); })}
-          </tbody></table>
+                </tr>); 
+            })}
+          </tbody>
+          </table>
       </div>
-      
-      </div>);
+    </div>);
 }
 export default Grades;
