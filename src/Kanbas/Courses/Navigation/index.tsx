@@ -5,9 +5,9 @@ import { IoEyeOffOutline } from "react-icons/io5";
 
 function CourseNavigation() 
 {
-    const links = ["Home", "Modules" ,  "Piazza" , "ZoomMeetings", "Assignments", "Quizzes", "Grades" , "People", "PanoptoVideo" ];
+    const links = ["Home", "Modules" ,  "Piazza" , "ZoomMeetings", "Assignments", "Grades"  ];
     const links_eye = [ "Discussions" , "Announcmenets", "Pages",
-    "Files" , "Rubrics" , "Outcomes", "Collaborations", "Syllabus", "Settings"];
+    "Files" , "Rubrics"];
     
     
 const { pathname } = useLocation();
