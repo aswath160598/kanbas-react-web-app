@@ -20,7 +20,7 @@ function ModuleList() {
      <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
       {/* <!-- Add buttons here --> */}
-            <div className="row">
+            <div className="d-flex">
                 <div className="top-b123">
                             <div className="wd-title12" style={{marginRight:"30px"}}>
                                 <div className="d-flex float-end" style={{width:"600px"}}>

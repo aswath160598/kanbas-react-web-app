@@ -1,4 +1,4 @@
-function Add({ a, b }: { a: number; b: number }) {
+function Add1({ a, b }: { a: number; b: number }) {
     return (
         <div>
             <h3>Add</h3>
@@ -9,4 +9,4 @@ function Add({ a, b }: { a: number; b: number }) {
     );
 }
 
-export default Add;
+export default Add1;

@@ -26,7 +26,7 @@ function Courses() {
     };
 
     return (
-        <div className="wd-courses w-100">
+        <div className="wd-courses-main w-100">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
      <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
@@ -47,7 +47,7 @@ function Courses() {
                 &nbsp;Student View
                 </button>
 
-                </div>
+            </div>
 
             <hr className="w-100" />
             <p>Course {course?.name}</p>

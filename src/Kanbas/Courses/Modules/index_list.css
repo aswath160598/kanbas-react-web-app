@@ -37,8 +37,7 @@
 
 .top-b123{
   margin-top: 0px;
-  /* margin-right: 90px; */
-  max-width: 100%;
+  width: 100%;
 }
 
 .text-success-circles{
