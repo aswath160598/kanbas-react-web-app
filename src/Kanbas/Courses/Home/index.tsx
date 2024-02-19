@@ -138,6 +138,14 @@ function Home() {
                             CS5610.12631.202410 Sep 11 at 12:30am
                         </p>
                     </ul>
+                    <div className="row">
+                        <div className="col-md-12">
+                        <a
+                            href="#" className="wd-red-color wd-font-size-13">
+                            12 more in the next week ...
+                        </a>
+                        </div>
+              </div>
                 </div>
         </div>
 </div>

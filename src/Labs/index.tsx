@@ -8,7 +8,7 @@ function Labs() {
       <Nav/>
        <h1>Labs</h1>
        <Assignment3/>
-       <Assignment4/>
+       {/* <Assignment4/> */}
       </div>
     );
   
