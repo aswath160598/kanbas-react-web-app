@@ -4,9 +4,9 @@ import { assignments } from "../../../Database";
 import "./index.css";
 
 function AssignmentEditor() {
-  const { assignmentId } = useParams();
+  const { Num_assign } = useParams();
   const assignment = assignments.find(
-(assignment) => assignment._id === assignmentId); 
+(assignment) => assignment._id === Num_assign); 
 const {  courseId } = useParams();
 
 const navigate = useNavigate();
@@ -16,7 +16,7 @@ const handleSave = () => {
   };
   return (
     <div>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
      <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
         <div className="col-11">

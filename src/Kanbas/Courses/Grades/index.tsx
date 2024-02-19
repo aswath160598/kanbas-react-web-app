@@ -4,13 +4,14 @@ import "./index_grades.css";
 import { FaKeyboard } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 
+
 function Grades() {
   const { courseId } = useParams();
   const as = assignments.filter((assignment) => assignment.course === courseId);
   const es = enrollments.filter((enrollment) => enrollment.course === courseId);
   return (
     <div>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
      <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
 
@@ -19,25 +20,35 @@ function Grades() {
                         <div className="top-buttons">
                             <div className="wd-title">
                             
-                                
-                                <div className="input-group float-start " >
-                                <p style={{color:"rgb(172, 23, 23)"}} >Gradebook<FaCaretDown /> <FaKeyboard style={{marginLeft:"310px"}} /></p>
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-sm" style={{color:"rgb(172, 23, 23)"}}>
+                                    Gradebook<FaCaretDown /> 
                                     </div>
-                                    <div className="float-end" >
-                                    <button type="button" className="btn btn-light ms-2"  >
-                                    <i className="fa-solid fa-file-import"></i>
-                                        Import
-                                    </button>
-                                    <button type="button" className="btn btn-light ms-2 dropdown-toggle"  >
-                                    <i className="fa-solid fa-file-export"></i>
-                                        Export
-                                    </button>
-                                    <button type="button" className="btn btn-light ms-2"  >
-                                    <i className="fa-solid fa-gear"></i>
-                                    </button>
+                                    <div className="col-sm" style={{color:"rgb(172, 23, 23)", marginLeft:"120px"}}>
+                                    <FaKeyboard/>
+                                    </div>
+                                    <div className="col-sm">
+                                        <div className=" col-sm" >
+                                            <div className="float-end " >
+                                            <button type="button" className="btn btn-light ms-2"  >
+                                            <i className="fa-solid fa-file-import"></i>
+                                                Import
+                                            </button>
+                                            <button type="button" className="btn btn-light ms-2 dropdown-toggle"  >
+                                            <i className="fa-solid fa-file-export"></i>
+                                                Export
+                                            </button>
+                                            <button type="button" className="btn btn-light ms-2"  >
+                                            <i className="fa-solid fa-gear"></i>
+                                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
                         <div className="mb-3">
                             <div className="row align-items-center">
@@ -49,7 +60,7 @@ function Grades() {
                                     </label>
                                 </div>
                                 <div className="col" >
-                                    <label className="form-check-label" style={{ marginLeft: "450px" }}>
+                                    <label className="form-check-label" style={{ marginLeft: "370px" }}>
                                         <b>
                                             Assignment Names
                                         </b>
@@ -59,8 +70,8 @@ function Grades() {
                             <div className="row">
                                 <div className="col">
                                     <div className="col">
-                                        <div className="input-group">
-                                            <select className="form-select" style={{ width:"260px" }}>
+                                        <div className="input-group ">
+                                            <select className="form-select col-6">
                                                 <option selected>
                                                     🔍 Search Students
                                                 </option>
@@ -91,8 +102,8 @@ function Grades() {
                                 </div>
                                 <div className="col">
                                     <div className="col">
-                                        <div className="input-group">
-                                            <select className="form-select" style={{ marginLeft: "80px",width:"450px" }}>
+                                        <div className="input-group col-6">
+                                            <select className="form-select">
                                                 <option selected>
                                                     🔍 Search Assignments
                                                 </option>
@@ -137,8 +148,8 @@ function Grades() {
       <div className="table-responsive  ">
         <table className="table table-striped table-bordered table-hover" style={{width:"1100px"}}>
           <thead>
-            <th>Student Name</th>
-            {as.map((assignment) => (<th>{assignment.title}</th>))}
+            <th style={{verticalAlign:"top",}}>Student Name<br /> </th>
+            {as.map((assignment) => (<th style={{textAlign:"center"}}>{assignment.title}<br />Out of 100</th>))}
           </thead>
           <tbody>
             {es.map((enrollment,index) => {
@@ -149,7 +160,7 @@ function Grades() {
                    {assignments.filter((assignment) => assignment.course === courseId).map((assignment) => {
                      const grade = grades.find(
                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
-                       return (<td key={assignment._id}>{grade?.grade || ""}</td>);})}
+                       return (<td key={assignment._id} style={{textAlign:"center"}}>{grade?.grade+"%" || ""}</td>);})}
                 </tr>); 
             })}
           </tbody>

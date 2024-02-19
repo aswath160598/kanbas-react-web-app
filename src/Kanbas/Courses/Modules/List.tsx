@@ -16,7 +16,7 @@ function ModuleList() {
   
   return (
 <>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
      <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
       {/* <!-- Add buttons here --> */}

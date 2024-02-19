@@ -10,9 +10,11 @@ function CourseNavigation()
     "Files" , "Rubrics"];
     
     
+    
 const { pathname } = useLocation();
 return (
   <ul className="list-group wd-course-navigation" style={{ width: 150 }}>
+    <li style={{ fontSize: 'small',color:"gray" }} key={0} >20252200_Spring_2024...</li>
     {links.map((link, index) => (
       <li key={index}>
         <Link to={link} className={`list-group-item ${pathname.includes(link) && "active"}`}>

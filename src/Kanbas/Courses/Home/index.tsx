@@ -14,6 +14,18 @@ function Home() {
         </div>
         <div className="col-2 col-sm-1 col-md-2 col-lg-2 d-none d-lg-block"> 
                 <div className="course-status ">
+                <p>Course Status</p>
+
+                <button type="button" className="btn-sm btn-light mb-1" style={{fontSize: "15px;"}}>
+                    <i className="fa-solid fa-ban"></i>
+                    Unpublish
+                </button>
+
+                <button type="button" className="btn-sm btn-success mb-1" style={{backgroundColor:"#0daf7e",marginLeft:"10px"}}>
+                    <i className="fas fa-check-circle" ></i>
+                Published
+
+                </button>
 
                     <button type="button" className="btn btn-light mb-1" >
                         <i className="fa-solid fa-file-import"></i>
