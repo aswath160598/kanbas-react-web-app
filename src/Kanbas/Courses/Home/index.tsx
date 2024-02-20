@@ -68,7 +68,7 @@ function Home() {
                     <a href="#">
                         <i className="fas fa-check-circle" ></i>
                         <i className="fa-solid fa-1"></i>
-                        Grade - ANV + HTML
+                        &nbsp;Grade - ANV + HTML
                     </a>
                     <p>
                         100 points Jan 23 at 11:59pm
@@ -77,7 +77,7 @@ function Home() {
                     <a href="#">
                         <i className="fas fa-check-circle"></i>
                         <i className="fa-solid fa-1"></i>
-                        Grade - ANV + CSS
+                        &nbsp;Grade - ANV + CSS
                     </a>
                     <p>
                         100 points Feb 05 at 11:59pm
@@ -86,7 +86,7 @@ function Home() {
                     <a href="#">
                         <i className="fas fa-check-circle"></i>
                         <i className="fa-solid fa-1"></i>
-                        Grade - ANV + JS
+                        &nbsp;Grade - ANV + JS
                     </a>
                     <p>
                         100 points Feb 05 at 11:59pm
@@ -130,6 +130,7 @@ function Home() {
                             <a href="#">
                                 CS5610 Web Development
                             </a>
+                            <br />
                         <a href="#">
                             Summer 1 2023 - LECTURE
                         </a>
