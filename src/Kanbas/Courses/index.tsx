@@ -1,4 +1,4 @@
-import { courses, assignments } from "../../Kanbas/Database";
+import db from "../../Kanbas/Database";
 import { useParams } from "react-router-dom";
 import { Routes, Route, Navigate, Link, useLocation } from "react-router-dom";
 import CourseNavigation from "./Navigation";
@@ -10,8 +10,18 @@ import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import { FaBars } from "react-icons/fa";
 
-
-function Courses() {
+interface CourseType {
+    _id: string;
+    name: string;
+    number: string;
+    startDate: string; // Assuming date is handled as a string, format: 'YYYY-MM-DD'
+    endDate: string;   // Assuming date is handled as a string, format: 'YYYY-MM-DD'
+    image: string;     // Assuming this is a path to an image or a URL
+  }
+  interface CourseProps {
+    courses: CourseType[];
+  }
+function Courses({courses}: CourseProps) {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     const course = courses.find((course) => course._id === courseId);
@@ -28,7 +38,7 @@ function Courses() {
   ) {
     Num_assign = var_navigation[5];
 
-    const assignmentList = assignments.filter(
+    const assignmentList = db.assignments.filter(
       (assignment) => assignment.course === courseId
     );
     assignment =

@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
-import { assignments } from "../../../Database";
+import db from "../../../Database";
 import "./index.css";
 
 function AssignmentEditor() {
   const { Num_assign } = useParams();
-  const assignment = assignments.find(
+  const assignment = db.assignments.find(
 (assignment) => assignment._id === Num_assign); 
 const {  courseId } = useParams();
 

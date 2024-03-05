@@ -43,3 +43,19 @@
 .text-success-circles{
   color: #0daf7e
 }
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100%;
+  margin: auto;
+  width: 290px;
+  gap: 10px;
+}
+
+.button-container123 {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100%;
+  gap: 10px;
+}

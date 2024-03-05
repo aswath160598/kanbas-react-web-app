@@ -1,4 +1,4 @@
-import { assignments, enrollments, grades, users } from "../../Database";
+import db from "../../Database";
 import { useParams } from "react-router-dom";
 import "./index_grades.css";
 import { FaKeyboard } from "react-icons/fa6";
@@ -7,8 +7,9 @@ import { FaCaretDown } from "react-icons/fa";
 
 function Grades() {
   const { courseId } = useParams();
-  const as = assignments.filter((assignment) => assignment.course === courseId);
-  const es = enrollments.filter((enrollment) => enrollment.course === courseId);
+  const as = db.assignments.filter((assignment) => assignment.course === courseId);
+  const es = db.enrollments.filter((enrollment) => enrollment.course === courseId);
+  const handleclick = (parameter = "Hello")=>{console.log(parameter)}
   return (
     <div>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -153,12 +154,12 @@ function Grades() {
           </thead>
           <tbody>
             {es.map((enrollment,index) => {
-              const user = users.find((user) => user._id === enrollment.user);
+              const user = db.users.find((user) => user._id === enrollment.user);
               return (
                 <tr>
                    <td style={{color:"rgb(227, 41, 41) "}}>{user?.firstName} {user?.lastName}</td>
-                   {assignments.filter((assignment) => assignment.course === courseId).map((assignment) => {
-                     const grade = grades.find(
+                   {db.assignments.filter((assignment) => assignment.course === courseId).map((assignment) => {
+                     const grade = db.grades.find(
                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
                        return (<td key={assignment._id} style={{textAlign:"center"}}>{grade?.grade+"%" || ""}</td>);})}
                 </tr>); 

@@ -1,18 +1,35 @@
 import React, { useState } from "react";
+// import  useState from "react";
 import "./index_list.css";
-import { modules } from "../../Database";
+import db from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
 import { useParams } from "react-router";
 import { RxDragHandleDots2 } from "react-icons/rx";
 import { FaCaretRight } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
+import { useSelector, useDispatch } from "react-redux";
+import { KanbasState } from "../../store";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modulesList = modules.filter((module) => module.course === courseId);
+  const [selectedModule, setSelectedModule] = useState(null);
+  // const [modulesList, setModuleList] = useState(modules);
+
+  const modulesList = useSelector((state: KanbasState) =>
+      state.modulesReducer.modules);
+  const module = useSelector((state: KanbasState) =>
+      state.modulesReducer.module);
+  const dispatch = useDispatch();
+  
   console.log(modulesList)
-  const [selectedModule, setSelectedModule] = useState(modulesList[0]);
+  
   
   return (
 <>
@@ -49,14 +66,60 @@ function ModuleList() {
             <hr />
       <ul className="list-group wd-modules12" style={{maxWidth:"1150px"}}>
       
-        {modulesList.map((module) => (
+      <li className="list-group-item" style={{marginRight: "12px", backgroundColor:"#EAEDED",marginBottom:"30px"}}>
+        <div>
+      <div >
+            <input className="form-control w-30"
+          value={module.name}
+          onChange={(e) =>
+            dispatch(setModule({ ...module, name: e.target.value }))
+          }/>
+          </div>
+        
+        <textarea className="form-control w-30"
+          value={module.description}
+          onChange={(e) =>
+            dispatch(setModule({ ...module, description: e.target.value }))
+          }/>
+
+        </div >
+        <div className="button-container">
+            <button 
+        onClick={() => dispatch(addModule({ ...module, course: courseId }))} className="btn btn-success">
+           Add
+        </button>
+        <button 
+        onClick={() => dispatch(updateModule(module))} className="btn btn-primary">
+  Update
+</button>
+
+           </div>
+      </li> 
+
+        {modulesList
+        .filter((module) => module.course === courseId)
+        .map((module:any) => (<>
           <li
             className="list-group-item" 
-            onClick={() => setSelectedModule(module)} style={{marginRight: "12px", backgroundColor:"#EAEDED",marginBottom:"30px"}}>
+            onClick={() => setSelectedModule(module._id)} style={{marginRight: "12px", backgroundColor:"#EAEDED",marginBottom:"30px"}}>
+            <div className="button-container123">
+            <button
+              onClick={() => dispatch(setModule(module))} className="btn btn-success">
+
+              Edit
+            </button>
+
+            <button
+              onClick={() => dispatch(deleteModule(module._id))} className="btn btn-danger ">
+
+              Delete
+            </button>
+            </div>
+
             <div>
             <i className="fa fa-grip-vertical" style ={{color:"gray",marginRight:"12px"}}></i>
 
-           {selectedModule._id === module._id ? <FaCaretDown className="me-2" /> : <FaCaretRight className="me-2" />}
+           {selectedModule === module._id ? <FaCaretDown className="me-2" /> : <FaCaretRight className="me-2" />}
                                 {module.name}
               <span className="float-end">
                 <FaCheckCircle className="text-success-circles"  />
@@ -65,9 +128,9 @@ function ModuleList() {
                 <FaEllipsisV className="ms-2" />
               </span>
             </div>
-            {selectedModule._id === module._id && (
+            {selectedModule === module._id && (
               <ul className="list-group">
-                {module.lessons?.map((lesson) => (
+                {module.lessons?.map((lesson: any) => (
                   <li className="list-group-item">
                     <RxDragHandleDots2 />
                     {lesson.name}
@@ -77,16 +140,9 @@ function ModuleList() {
                     </span>
                     </li>
             ))} </ul>
-        )} </li>
+        )} </li></>
         ))} </ul>
         </>
 ); 
 }
 export default ModuleList;
-
-
-
-
-
-
-
