@@ -84,7 +84,7 @@ function Dashboard( { courses, course, setCourse, addNewCourse, deleteCourse, up
                         style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
                         {course.name} </Link>
                         
-
+                    <div>
                         <button
                             onClick={(event) => {
                                 event.preventDefault();
@@ -101,6 +101,7 @@ function Dashboard( { courses, course, setCourse, addNewCourse, deleteCourse, up
                             className="btn btn-warning float-end ms-2">
                             Edit
                         </button>
+                      </div>
                       
                       <p className="card-text">
                         {course.name}
