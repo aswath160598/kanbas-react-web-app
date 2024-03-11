@@ -10,7 +10,8 @@ import { addAssignment, setAssignment, updateAssignment, initialState } from "..
 
 
 function AssignmentEditor() {
-  const { Num_assign } = useParams();
+
+const { Num_assign } = useParams();
 
 const {  courseId } = useParams();
 
@@ -24,29 +25,33 @@ const dispatch = useDispatch();
   state.assignmentsReducer.assignment);
 
 
-  
-  const Button_Save = () => {
-    if (assignment && assignment._id) 
-    {
-        dispatch(updateAssignment(
-            { ...assignment, course: courseId }
-            ));
-    } 
-    else
-     {
-        dispatch(addAssignment(
-            { ...assignment, course: courseId }
-            ));
-    }
-    navigate(`/Kanbas/Courses/${courseId}/Assignments`);
-};
-
-const old_course = initialState.assignment
-
 const courseAssignments = useSelector(
     (state: KanbasState) =>
     state.assignmentsReducer.assignments);
 
+const Button_Save = () => {
+    const existingAssignment = courseAssignments.find(
+      (a) => a._id === assignment._id
+    );
+
+    if (existingAssignment) 
+    {
+      dispatch(updateAssignment(
+        { ...assignment }
+        ));
+      navigate(`/Kanbas/Courses/${courseId}/Assignments`);
+    } 
+    else 
+    {
+      dispatch(addAssignment(
+        { ...assignment, course: courseId }
+        ));
+      navigate(`/Kanbas/Courses/${courseId}/Assignments`);
+    }
+}
+
+
+const old_course = initialState.assignment
 
 
 useEffect(() => 
