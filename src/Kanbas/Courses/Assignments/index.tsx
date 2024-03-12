@@ -107,7 +107,7 @@ state.assignmentsReducer.assignments).filter(
                 </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Are you sure you want to delete the Assignment :  
+                    Do you want to delete the Assignment :  
                     <b> 
                         {Assign_Chosen_Title}
                     </b>?
