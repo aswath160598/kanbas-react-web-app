@@ -14,14 +14,14 @@ import { AiFillDelete } from "react-icons/ai";
 
 function Assignments() {
   const { courseId } = useParams();
-  const [Assign_Chosen_ID, setAssign_Chosen_ID] = useState(null);
-  const [Assign_Chosen_Title, setAssign_Chosen_Title] = useState("");
+  const [Assign_Chosen_ID, Boolean_Assign_Chosen_ID] = useState(null);
+  const [Assign_Chosen_Title, Boolean_Assign_Chosen_Title] = useState("");
   const [display, flag_display] = useState(false);
 
 const activateModal = (course_ID_Value: React.SetStateAction<null>, course_Title_Value: React.SetStateAction<string>) => {
     flag_display(true);
-    setAssign_Chosen_ID(course_ID_Value);
-    setAssign_Chosen_Title(course_Title_Value);
+    Boolean_Assign_Chosen_ID(course_ID_Value);
+    Boolean_Assign_Chosen_Title(course_Title_Value);
 };
 const dispatch = useDispatch();
 const courseAssignments = useSelector((state: KanbasState) =>
@@ -107,7 +107,7 @@ state.assignmentsReducer.assignments).filter(
                 </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Do you want to delete the Assignment: 
+                    Are you sure you want to delete the Assignment :  
                     <b> 
                         {Assign_Chosen_Title}
                     </b>?
