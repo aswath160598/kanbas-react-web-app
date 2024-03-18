@@ -95,13 +95,20 @@ useEffect(() =>
         name="assign1"
         value={assignment?.title ?? "Name of the New Assignment"}
         onChange={(e) =>
-            dispatch(setAssignment({ ...assignment, title: e.target.value }))
+            dispatch(setAssignment(
+                { ...assignment, 
+                title: e.target.value }
+                ))
         }
       />
                                     </div>
                                     <div className="mb-4">
                                     <textarea className="form-control mb-3" onChange={(e) =>
-                        dispatch(setAssignment({ ...assignment, description: e.target.value }))
+                        dispatch(setAssignment(
+                            { ...assignment,
+                                 description: e.target.value 
+                                }
+                                ))
                     }
                         value={assignment?.description} >
         {assignment
@@ -117,7 +124,11 @@ useEffect(() =>
                                             </div>
                                             <div className="col">
                                                 <input type="number" className="form-control" id=" text-insert" value={assignment?.points} onChange={(e) =>
-                                    dispatch(setAssignment({ ...assignment, points: e.target.value }))
+                                    dispatch(setAssignment(
+                                        { ...assignment,
+                                             points: parseInt(e.target.value) 
+                                            }
+                                            ))
                                 } />
                                             </div>
                                         </div>
