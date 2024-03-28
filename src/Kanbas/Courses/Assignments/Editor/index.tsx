@@ -60,7 +60,8 @@ useEffect(() =>
     {
         const Assign_update = 
         courseAssignments.find
-        (assignment => assignment._id === Num_assign);
+        (assignment => 
+            assignment._id === Num_assign);
         if (Assign_update) 
         {
             dispatch(setAssignment(Assign_update));

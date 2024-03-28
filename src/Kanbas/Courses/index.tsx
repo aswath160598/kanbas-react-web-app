@@ -9,6 +9,8 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import { FaBars } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 interface CourseType {
     _id: string;
@@ -21,10 +23,21 @@ interface CourseType {
   interface CourseProps {
     courses: CourseType[];
   }
-function Courses({courses}: CourseProps) {
+function Courses() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
-    const course = courses.find((course) => course._id === courseId);
+    const COURSES_API = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState<any>({ _id: "" });
+    const findCourseById = async (courseId?: string) => {
+      const response = await axios.get(
+        `${COURSES_API}/${courseId}`
+      );
+      setCourse(response.data);
+    };
+    useEffect(() => {
+      findCourseById(courseId);
+  }, [courseId]);
+  
 
   const var_navigation = pathname.split("/");
   const second_level_var = var_navigation[4];
